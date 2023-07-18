@@ -1,0 +1,63 @@
+navbar {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    height: 90px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    color: #4c6763;
+    font-size: 17px;
+
+}
+
+navbar>div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    width: 50%;
+}
+
+body {
+    background-color: hsl(36deg 30.91% 87.46%);
+    margin: 0px;
+    padding: 0px;
+}
+
+.hero{
+    z-index: 0;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #025a4e;
+    font-size: 20px;
+    
+}
+
+.hero-child{
+width: 54%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+height: fit-content;
+position: relative
+;}
+
+.name{
+    font-size: 115px;
+}
+
+.abs{
+    position: absolute;
+}
+.star{
+left: -60px;
+bottom: 35%;
+
+}
