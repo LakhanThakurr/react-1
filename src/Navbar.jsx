@@ -1,21 +1,45 @@
 import './Nav.css'
+import { NavLink } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 
 function Navbar() {
+
+    const [scrolling, setScrolling] = useState(false);
+
+    const handleScroll = () => {
+        if (window.scrollY > 70) {
+            setScrolling(true);
+        } else {
+            setScrolling(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+
+
 
     return (
         <navbar >
 
-            <div>
+            <div className={`navbar ${scrolling ? 'scrolling' : ''}`}>
 
-                <h1>Work</h1>
-                <h1>About</h1>
-                <h1>Play</h1>
-                <h1>Note</h1>
+                <NavLink to={"/"} className='l1'>Work</NavLink>
+                <NavLink to={"/About"} className='l1'>About</NavLink>
+                <NavLink to={"/"} className='l1'>Play</NavLink>
+                <NavLink to={"/"} className='l1'>Note</NavLink>
+                <NavLink to={"/"} className='l1'>Contact</NavLink>
 
             </div>
 
         </navbar>
     );
-}
 
+};
 export default Navbar;

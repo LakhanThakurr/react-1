@@ -1,3 +1,8 @@
+*{
+    margin: 0px;
+    color: #025a4e;
+    box-sizing: border-box;
+}
 navbar {
     display: flex;
     justify-content: center;
@@ -12,21 +17,48 @@ navbar {
 
 }
 
+
+.navbar {
+    background-color: transparent;
+}
+
+.navbar.scrolling {
+    background-color: #f3f3f3c9;
+}
+
+
 navbar>div {
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-radius: 50px;
-    width: 50%;
+    width: 45%;
+    transition: .4s ease-in-out;
+
+}
+
+navbar>div>a {
+    text-decoration: none;
+    color: #025a4e;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin: 0px;
+
+}
+
+navbar>div>a:hover {
+
+    background-color: rgba(240, 248, 255, 0.374);
 }
 
 body {
     background-color: hsl(36deg 30.91% 87.46%);
     margin: 0px;
     padding: 0px;
+   
 }
 
-.hero{
+.hero {
     z-index: 0;
     position: relative;
     height: 100vh;
@@ -35,29 +67,32 @@ body {
     align-items: center;
     color: #025a4e;
     font-size: 20px;
-    
+    background: linear-gradient(8deg, hsl(36deg 30.91% 87.46%), #27e12559);
+
 }
 
-.hero-child{
-width: 54%;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-text-align: center;
-height: fit-content;
-position: relative
-;}
+.hero-child {
+    width: 54%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: fit-content;
+    position: relative;
+   
+}
 
-.name{
+.name {
     font-size: 115px;
 }
 
-.abs{
+.abs {
     position: absolute;
 }
-.star{
-left: -60px;
-bottom: 35%;
+
+.star {
+    left: -60px;
+    bottom: 35%;
 
 }

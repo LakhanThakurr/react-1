@@ -1,0 +1,13 @@
+
+.hero {
+    z-index: 0;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #025a4e;
+    font-size: 20px;
+    background: linear-gradient(8deg, hsl(36deg 30.91% 87.46%), #27e12559);
+
+}

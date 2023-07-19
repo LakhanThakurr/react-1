@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     padding: 0px 30px;
-    margin-bottom: 0px;
+    margin: 50px 0px;
 }
 
 .card-box>div {
@@ -16,7 +16,7 @@
 }
 
 .card-big {
-    width: 60%;
+    width: 65%;
     height: 90%;
     background-color: hsl(172deg 40.66% 72.13%);
 }
@@ -30,7 +30,7 @@
 }
 
 .card-sm {
-    width: 40%;
+    width: 35%;
     height: 90%;
     background-color: hsl(284deg 59.92% 73.15%);
 }
@@ -106,8 +106,26 @@
     line-height: 2;
 }
 
+
 .pro-div>div>h2 {
     font-size: 115px;
     margin: 10px;
+}
+
+.crd2-img {
+    width: auto !important;
+    height: 100% !important;
+
+    bottom: -27% !important;
+    left: 15% !important;
+
+}
+.crd3-img {
+    height: 34% !important;
+}
+
+.h:hover>.crd2-img  {
+
+    bottom: -32% !important;
 
 }
