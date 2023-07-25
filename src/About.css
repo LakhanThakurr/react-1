@@ -1,13 +1,242 @@
-
-.hero {
+.about-hero {
     z-index: 0;
     position: relative;
-    height: 100vh;
+    height: 170vh;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     color: #025a4e;
     font-size: 20px;
-    background: linear-gradient(8deg, hsl(36deg 30.91% 87.46%), #27e12559);
+    background: linear-gradient(30deg,
+            hsl(36deg 30.91% 87.46%) 51%,
+            /* First color, 51% from the bottom */
+            #27e1251c 80%,
+            /* Second color, 80% from the bottom */
+            #fde1f2 100%
+            /* Third color, 100% (top) */
+        );
+
+}
+
+.hi {
+    font-size: 105px;
+    line-height: 115px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin-top: 60px;
+}
+
+.hero-img {
+    border-top-right-radius: 200px;
+    border-top-left-radius: 200px;
+    overflow: hidden;
+    height: 390px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.hero-img>img {
+    height: 100%;
+    width: auto;
+
+}
+
+.hero-txt {
+    width: 45%;
+}
+
+.hero-txt>h2 {
+    font-size: 52px;
+
+}
+
+.hero-txt>p {
+    line-height: 1.5;
+}
+
+.hero-p {
+    margin: 40px 0px;
+}
+
+.sp-ab {
+    background-color: hsla(172, 95%, 18%, 1);
+    width: 100%;
+    color: aliceblue;
+    border-radius: 0px;
+    font-size: 15px;
+
+}
+
+.w {
+    color: white;
+}
+
+
+
+
+/* Rest about css from here */
+
+.abt-scout {
+
+    display: flex;
+    border-radius: 50px;
+    background-color: #025a4e;
+    align-items: center;
+    padding: 20px 30px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.s-pp {
+    margin-bottom: 10px;
+}
+
+
+
+.n {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.s-container {
+    display: flex;
+    align-items: end;
+    width: 100%;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0px 60px;
+}
+
+.s1 {
+    width: 40%;
+}
+
+.s2 {
+    width: 65%;
+}
+
+.s3 {
+    width: 32%;
+    left: -50%;
+}
+
+.s4 {
+    width: 18%;
+    left: -82%;
+}
+
+.coll-c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding: 0px 60px;
+}
+
+.collaborate {
+    font-size: 52px;
+    width: 100%;
+    margin: 40px 0px;
+    text-align: left;
+}
+
+.collab {
+    width: 78%;
+}
+
+.collaborate-txt {
+    font-size: 20px;
+    width: 61%;
+    text-align: left;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.article-sec {
+    margin-top: 60px;
+    display: flex;
+    padding: 0px 60px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    width: 388px;
+    gap: 20px;
+}
+
+
+.article>h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.article> :first-child {
+    font-size: 45px;
+    opacity: .6;
+
+}
+
+.article>p {
+    font-size: 20px;
+    line-height: 1.5;
+
+}
+
+.article-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 70px;
+    padding: 90px 80px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.288);
+    justify-content: space-around;
+}
+
+
+.p-box {
+    padding: 60px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+
+}
+
+.p-box>p {
+    font-size: 20px;
+    max-width: 560px;
+    line-height: 1.5;
+}
+
+.A-img-sec {
+
+    display: flex;
+    padding: 0px 60px;
+    gap: 20px;
+
+}
+
+.A-img-sec>img {
+    border-radius: 50px;
+}
+
+.i {
+    width: 70%;
+
+}
+
+.ii {
+    width: 30%;
 
 }

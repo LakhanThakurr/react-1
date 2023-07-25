@@ -1,7 +1,7 @@
 .footer {
     width: 100%;
     padding: 60px 20px;
-    
+
 }
 
 
@@ -14,7 +14,7 @@
 }
 
 .c-1 {
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,7 +24,7 @@
 }
 
 .c-2 {
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: center;
 
@@ -33,11 +33,15 @@
 
 .spotify {
     border-radius: 40px;
-    background-color: azure;
-    width: 70%;
+    background-color: #f4f4f4a6;
+    width: 80%;
     display: flex;
-    padding: 20px 0px;
+    padding: 15px 0px;
+    margin-left: 90px;
+}
 
+.f-h {
+    margin-top: 40px;
 }
 
 .spotify-txt>p {
@@ -68,40 +72,40 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     overflow: hidden;
-   margin: 70px 0px;
-   height: 100px;
-    
+    margin: 70px 0px;
+    height: 100px;
+
 }
 
 .stick {
-   
+
     background-color: #025a4e;
     margin: 0px 25px;
-  width: 1px;
-  padding: 1px;
-  height: 100%;
+    width: 1px;
+    padding: 1px;
+    height: 100%;
 
 
 }
 
-.stick-c> div:nth-child(odd) {
+.stick-c>div:nth-child(odd) {
     height: 20px;
 
 }
 
-.stick-c> div:nth-child(even) {
+.stick-c>div:nth-child(even) {
     height: 28px;
-   
+
 }
 
-.s-p{
+.s-p {
     transition: .2s ease-in-out;
 }
 
-.s-p:hover{
-height: 35px !important;
-cursor: pointer;
+.s-p:hover {
+    height: 49px !important;
+    cursor: pointer;
 
 }
