@@ -70,6 +70,7 @@
     color: aliceblue;
     border-radius: 0px;
     font-size: 15px;
+    margin-left: auto;
 
 }
 
@@ -80,7 +81,6 @@
 
 
 
-/* Rest about css from here */
 
 .abt-scout {
 
@@ -238,5 +238,28 @@
 
 .ii {
     width: 30%;
+
+}
+
+@media (max-width: 967px) {
+
+    .about-hero {
+
+        padding: 140px 0px;
+        height: -moz-fit-content;
+        height: fit-content;
+    }
+
+    .hi {
+        font-size: 80px;
+    }
+
+    .hero-txt>h2 {
+        font-size: 41px;
+    }
+
+    .hero-content>:first-child {
+        width: 220px;
+    }
 
 }

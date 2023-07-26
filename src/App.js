@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState } from "react";
 import Navbar from "./Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Work from "./Work";
@@ -8,7 +8,7 @@ import Card2 from "./Card2";
 import Card3 from "./Card3";
 import Progress from "./Pro";
 import "./font/stylesheet.css";
-import Footer from "./Footer";
+import ElementContainer from "./Footer";
 import Intro from "./About";
 import { RestA1, RestA2, RestA3, RestA4, RestA5 } from "./Rest_About";
 import Contact from "./Contact";
@@ -147,14 +147,11 @@ function App() {
               imgUrl="https://www.seanhalpin.xyz/notes/prototypes/icon@2x.png"
             />
 
-
-
-
           </div>
         </>
         } />
       </Routes>
-      <Footer />
+      <ElementContainer />
     </BrowserRouter>
   );
 }

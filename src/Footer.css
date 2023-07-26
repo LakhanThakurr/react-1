@@ -76,6 +76,7 @@
     overflow: hidden;
     margin: 70px 0px;
     height: 100px;
+    position: relative;
 
 }
 
@@ -107,5 +108,29 @@
 .s-p:hover {
     height: 49px !important;
     cursor: pointer;
+
+}
+
+
+@media (max-width:967px) {
+
+    .spotify {
+        margin-left: 0px;
+    }
+
+    .stick-c {
+        margin: 20px 0px;
+    }
+
+    .stick-c>img {
+        display: none;
+    }
+
+    .c-1,
+    .c-2 {
+        padding: 20px 0px;
+    }
+
+
 
 }

@@ -135,22 +135,9 @@ body {
 
 @media (max-width:967px) {
 
-  .name {
-    font-size: 82px;
-    margin-bottom: 50px;
-  }
+  .hero {
 
-  .hero-child {
-    width: 488px;
-  }
-
-  .card-box {
-    flex-direction: column;
-  }
-
-  .card-box>div {
-    border-radius: 30px;
-
+    height: fit-content;
   }
 
 }
