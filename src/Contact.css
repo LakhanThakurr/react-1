@@ -113,3 +113,9 @@ form {
         width: 100%;
     }
 }
+
+@media screen and (max-width: 967px) {
+    .wrapper {
+        margin-top: 60px;
+    }
+}

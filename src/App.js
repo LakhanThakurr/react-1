@@ -14,11 +14,14 @@ import { RestA1, RestA2, RestA3, RestA4, RestA5 } from "./Rest_About";
 import Contact from "./Contact";
 import { Play, PlayC1, PlayC2 } from "./Play";
 import { Note, NoteC1 } from "./Note";
+import ScrollToTop from "./ScrollToTop";
+
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route
           path="/"
