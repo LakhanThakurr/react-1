@@ -134,3 +134,62 @@
 
 
 }
+
+
+
+
+
+@media (max-width:740px) {
+
+
+    .footer-c {
+        flex-direction: column;
+        margin: 0px 0px;
+        gap: 0px;
+    }
+
+    .footer-c>div {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .spotify {
+        width: 100%;
+    }
+
+    .f-h>h3,
+    .f-h>p {
+
+        margin-right: 0px;
+    }
+
+    .card-box>div {
+        min-height: 201px;
+    }
+
+    .footer {
+
+        padding: 30px 20px;
+    }
+
+    .stick-c {
+        display: none;
+    }
+
+    .c-1,
+    .c-2 {
+        padding: 0px 0px;
+    }
+
+    .txt-ftr {
+
+        width: fit-content;
+    }
+
+    .spotify>img {
+
+        margin-right: 7px;
+        margin-left: 9px;
+    }
+
+}

@@ -201,6 +201,66 @@
         height: 58vh;
     }
 
+}
+
+@media (max-width:740px) {
+
+    .name {
+        font-size: 38px;
+        width: 200px
+    }
+
+    .card-box {
+        padding: 0px 20px;
+
+        height: auto;
+    }
+
+    .star {
+        left: 17px;
+        bottom: auto;
+    }
+
+    .abs {
+        height: 50px;
+    }
+
+    .pro-div>div>h2 {
+        font-size: 35px;
+    }
+
+    .card-box>div {
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    .hero-child {
+        width: 359px;
+        margin-top: 150px;
+        padding: 0px 0px
+    }
+
+    .mr-0 {
+
+        font-size: 25px;
+    }
+
+    .mrt {
+        font-size: 17px;
+        margin-top: 10px;
+    }
+
+    .card-txt {
+        margin-right: 10px;
+
+    }
+
+    .pro-div>div {
+        width: 100%;
+        padding: 0px 20px;
+
+    }
+
 
 
 }

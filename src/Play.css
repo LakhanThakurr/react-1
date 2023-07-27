@@ -137,3 +137,52 @@
     }
 
 }
+
+@media (max-width: 740px) {
+
+
+    .play-hero>h2 {
+        font-size: 50px;
+    }
+
+    .play-hero {
+
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 30px;
+        padding-top: 100px;
+    }
+
+    .p-h-t {
+        padding: 0px;
+        margin-bottom: 30px;
+    }
+
+    .flexBox {
+        display: grid;
+        gap: 20px;
+        padding: 30px;
+        grid-template-columns: auto;
+    }
+
+    .playC1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px 20px;
+    }
+
+    .playC2 {
+        text-align: center;
+        padding: 10px 10px;
+    }
+
+    .playC1>img {
+
+        background: white;
+    }
+
+
+
+}

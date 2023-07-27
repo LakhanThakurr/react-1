@@ -2,6 +2,7 @@ import "./Nav.css";
 import { NavLink } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 
+
 function Navbar() {
   const [scrolling, setScrolling] = useState(false);
 
@@ -23,7 +24,11 @@ function Navbar() {
 
   return (
     <navbar>
+
       <div className={`navbar ${scrolling ? "scrolling" : ""}`}>
+
+
+
         <NavLink to={"/"} className="l1">
           Work
         </NavLink>

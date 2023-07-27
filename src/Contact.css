@@ -99,7 +99,7 @@ form {
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 740px) {
     .contact-form {
         flex-direction: column;
     }
@@ -112,10 +112,30 @@ form {
     .msg {
         width: 100%;
     }
+
+    form {
+        flex-direction: column;
+    }
+
+    .wrapper {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 90%;
+    }
+
 }
 
-@media screen and (max-width: 967px) {
+@media screen and (max-width: 740px) {
     .wrapper {
-        margin-top: 60px;
+        margin-top: 120px;
+
+        width: 90%;
+    }
+
+    .contact-hero {
+
+        height: auto;
     }
 }
