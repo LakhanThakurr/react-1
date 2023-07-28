@@ -22,6 +22,7 @@
 
 .wrapper {
     position: absolute;
+    margin-top: 130px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -99,7 +100,7 @@ form {
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 967px) {
     .contact-form {
         flex-direction: column;
     }
@@ -113,16 +114,8 @@ form {
         width: 100%;
     }
 
-    form {
-        flex-direction: column;
-    }
-
     .wrapper {
-        position: relative;
-        top: auto;
-        left: auto;
-        transform: none;
-        width: 90%;
+        margin-top: 150px;
     }
 
 }
@@ -130,8 +123,16 @@ form {
 @media screen and (max-width: 740px) {
     .wrapper {
         margin-top: 120px;
-
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
         width: 90%;
+        width: 90%;
+    }
+
+    form {
+        flex-direction: column;
     }
 
     .contact-hero {

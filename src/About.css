@@ -1,5 +1,6 @@
 .about-hero {
     z-index: 0;
+    min-height: 1000px;
     position: relative;
     height: 170vh;
     display: flex;
@@ -244,10 +245,12 @@
 @media (max-width: 967px) {
 
     .about-hero {
+        min-height: auto;
 
         padding: 140px 0px;
         height: -moz-fit-content;
         height: fit-content;
+
     }
 
     .hi {
