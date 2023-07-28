@@ -3,6 +3,7 @@
     z-index: 0;
     position: relative;
     height: 100vh;
+    max-height: 598px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -115,7 +116,7 @@ form {
     }
 
     .wrapper {
-        margin-top: 150px;
+        margin-top: 77px;
     }
 
 }
@@ -136,7 +137,7 @@ form {
     }
 
     .contact-hero {
-
+        max-height: initial;
         height: auto;
     }
 }
