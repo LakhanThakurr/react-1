@@ -19,12 +19,21 @@ navbar {
   width: 100%;
   color: #4c6763;
   font-size: 17px;
+  /* Start the navbar off the screen */
+  transition: right 0.3s ease;
+
+
+
+  ;
 }
+
+
 
 .navbar {
   background-color: transparent;
   width: -moz-fit-content;
   width: fit-content;
+  transition: transform 0.3s ease-in-out;
 }
 
 .navbar.scrolling {
@@ -60,6 +69,43 @@ body {
   margin: 0px;
   padding: 0px;
 }
+
+
+
+/* Styles for the hamburger menu icon */
+.burger-icon {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+
+  cursor: pointer;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: hsla(172, 95%, 18%, 1);
+  margin: 4px 0;
+  transition: transform .5s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Animation for the hamburger menu icon */
+
+.burger-icon.open .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-4px, -3px);
+}
+
+.burger-icon.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-icon.open .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-4px, 3px);
+}
+
+
 
 .hero {
   z-index: 0;
@@ -147,18 +193,38 @@ body {
 
 
 
+
+
 @media (max-width:740px) {
+
+  .burger-icon {
+    display: flex;
+    margin-right: 10px;
+  }
+
+  .navbar.open {
+
+    right: -35px;
+
+  }
+
+
+  .l1.active {
+    background-color: rgb(212 212 212);
+  }
 
   navbar>div>a {
 
     padding: 10px 10px;
     border-radius: 5px;
+    margin-left: 15px;
 
   }
 
   navbar {
     padding: 0px;
     height: 70px;
+    justify-content: right;
   }
 
   navbar>div {
@@ -166,13 +232,29 @@ body {
   }
 
   .navbar.scrolling {
-    background-color: #ebebeb;
-    width: 100%;
-    padding: 0px;
+    background-color: #ffffff;
+
+    padding: 50px 0px;
 
   }
 
   .navbar {
     width: 100%;
+    opacity: 0;
+    right: -170px;
+    transition: 1s ease-in-out;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 70px;
+    background-color: #ffffff;
+    width: 150px;
+    border-radius: 40px;
+    padding: 50px 0px;
+    opacity: 1;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 39px;
+
   }
 }
